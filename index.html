@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Élixir - Parfumerie Fine</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Playfair Display', 'Georgia', serif;
+        }
+
+        body {
+            background-color: #fdfbf7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eae5d9;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin-left: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b89742;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #b89742;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #967a33;
+        }
+
+        /* Collection Section */
+        .collection {
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 1px;
+            background-color: #b89742;
+            margin: 15px auto 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #f0ebe1;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .product-type {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #b89742;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #b5b5b5;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-top: 5px solid #b89742;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">L'Élixir</div>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#collection">Collections</a>
+            <a href="#about">Notre Histoire</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>L'Élixir de Parfum</h1>
+        <p>Découvrez une collection de fragrances rares, conçues pour capturer l'essence de l'élégance intemporelle.</p>
+        <a href="#collection" class="cta-btn">Explorer la collection</a>
+    </section>
+
+    <section class="collection" id="collection">
+        <h2 class="section-title">Les Essentiels</h2>
+        t
+        <div class="grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=500&q=80" alt="Parfum Rose Nuit" class="product-img">
+                <div class="product-type">Eau de Parfum</div>
+                <h3>Rose Nuit</h3>
+                <div class="price">120,00 €</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=500&q=80" alt="Parfum Ambre Doré" class="product-img">
+                <div class="product-type">Eau de Parfum</div>
+                <h3>Ambre Doré</h3>
+                <div class="price">145,00 €</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=500&q=80" alt="Parfum Bois de Oud" class="product-img">
+                <div class="product-type">Extrait de Parfum</div>
+                <h3>Bois de Oud</h3>
+                <div class="price">165,00 €</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 L'Élixir Parfums. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
